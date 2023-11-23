@@ -1,0 +1,56 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Montserrat:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Rulez */
+*,
+*:before,
+*:after {
+  @apply cursor-default;
+}
+
+a, button {
+  @apply cursor-pointer;
+}
+
+html,
+body,
+#root,
+.app {
+  font-family: "DM Sans", sans-serif;
+  @apply text-gray-500;
+}
+
+/* Layer */
+@layer{
+  .btn-primary{
+    @apply rounded-md bg-secondary-500 px-10 py-2 hover:bg-primary-500 cursor-pointer
+  }
+}
+
+/* ScrollBar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px #FFE1E0; 
+  border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FFE1E0; 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6B66; 
+}
