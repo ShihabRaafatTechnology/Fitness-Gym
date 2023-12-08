@@ -16,3 +16,9 @@ export interface benefitsType {
     title: string;
     description: string;
 }
+
+export interface ourClassesType {
+    name: string;
+    description?: string;
+    image: string;
+}

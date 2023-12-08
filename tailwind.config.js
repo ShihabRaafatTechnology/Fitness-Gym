@@ -6,6 +6,7 @@ export default {
       cursor: {
         default: 'url(../src/assets/select-cursor.png), default',
         pointer: 'url(../src/assets/select-pointer.png), pointer',
+        allScroll: 'url(../src/assets/select-chevron.png), all-scroll',
       },
       colors: {
         "gray-20": "#F8F4EB",

@@ -27,11 +27,11 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
   return (
     <nav>
       <div
-        className={`${navbarBackgroundColor} ${flexBetween} fixed top-0 z-30 w-full py-6 transition-all duration-200`}
+        className={`${navbarBackgroundColor} ${flexBetween} fixed top-0 z-50 w-full py-6 transition-all duration-200`}
       >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
-            <img src={Logo} alt="logo" />
+            <img src={Logo} alt="logo" draggable="false"/>
             {isAboveMediumScreens ? (
               <div className={`${flexBetween} w-full`}>
                  {/* NAVBAR PAGES */}
@@ -76,7 +76,7 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: Props) => {
 
       {/* MOBILE MENU MODAL */}
       {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed bottom-0 right-0 z-40 h-full w-[65vw] bg-primary-100 drop-shadow-xl">
+        <div className="fixed bottom-0 right-0 z-40 h-full w-[80vw] bg-primary-100 drop-shadow-xl">
           {/* CLOSE ICON */}
           <div className="flex justify-end p-12">
             <button

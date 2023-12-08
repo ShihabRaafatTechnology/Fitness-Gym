@@ -72,6 +72,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             src={BenefitsPageGraphic}
             alt="benefits-page-graphic"
             className="mx-auto"
+            draggable="false"
           />
 
           {/* DESCRIPTION */}

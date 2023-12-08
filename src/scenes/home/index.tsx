@@ -36,7 +36,7 @@ const Home = ({ setSelectedPage }: Props) => {
           >
             <div className="relative">
               <div className="before:absolute before:-left-20 before:-top-20 before:z-[-1] md:before:content-evolvetext">
-                <img src={HomePageText} alt="home-page-text" />
+                <img src={HomePageText} alt="home-page-text" draggable="false"/>
               </div>
             </div>
             <p className="mt-8 text-sm">
@@ -76,7 +76,7 @@ const Home = ({ setSelectedPage }: Props) => {
         </div>
          {/* IMAGE HOME PAGE */}
         <div className="flex basis-3/5 md:z-10 md:ml-40 md:mt-16">
-          <img src={HomePageGraphic} alt="home-page-graphic" />
+          <img src={HomePageGraphic} alt="home-page-graphic" draggable="false"/>
         </div>
       </motion.div>
 
@@ -85,9 +85,9 @@ const Home = ({ setSelectedPage }: Props) => {
         <div className="h-[150px] w-full bg-primary-100 py-10">
           <div className="mx-auto w-5/6">
             <div className="flex w-3/5 items-center justify-between">
-              <img src={SponsorRedBull} alt="sponsor-redbull" />
-              <img src={SponsorFortune} alt="sponsor-fortune" />
-              <img src={SponsorForbes} alt="sponsor-forbes" />
+              <img src={SponsorRedBull} alt="sponsor-redbull" draggable="false"/>
+              <img src={SponsorFortune} alt="sponsor-fortune" draggable="false"/>
+              <img src={SponsorForbes} alt="sponsor-forbes" draggable="false"/>
             </div>
           </div>
         </div>
